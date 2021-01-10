@@ -1,0 +1,58 @@
+body{
+  background-color: #011627;
+  color:#fdfffc;
+  text-align: center;
+  border: 43px solid #2ec486;
+	border-radius: 12px;
+	border-top: 0px;
+	margin: 22px;
+}
+h1
+{
+	color: #ff9f1c;
+	font-family: 'Acme', sans-serif;
+	letter-spacing: 6px;
+	font-style: inherit;
+	font-size: 45px;
+}
+p{
+font-family: 'Antic Slab', serif;
+padding-left: 10%;
+padding-right: 10%;
+line-height: 29px;
+font-size: 18px;
+}
+label
+{
+  font-family: 'Antic Slab', serif;
+  line-height: 29px;
+  font-size: 18px;
+}
+
+div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+.at-item {
+  color: #3079ed;
+  animation-name: focus-in-contract;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+}
+@keyframes focus-in-contract {
+  0%{
+    letter-spacing: 1em;
+    filter: blur(2px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
